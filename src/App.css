@@ -1,3 +1,48 @@
 .complete {
     text-decoration: line-through;
 }
+
+span {
+    margin-left: .5em;
+    margin-right: .5em;
+}
+
+button {
+    background-color: red;
+    font-weight: bolder;
+}
+
+#checkbox {
+    width: 1em;
+    height: 1em;
+}
+
+#submit {
+    margin-left: .50em;
+}
+
+
+#container {
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+.box {
+    border: 1px solid black;
+    width: fit-content;
+    padding: 1em;
+}
+
+ul {
+    padding-left: 1em;
+}
+
+
+li {
+    list-style-type: none ;
+}
+
+span {
+    font-size: larger;
+}
+

@@ -41,17 +41,24 @@ function TaskManager() {
 
     return (
         <div>
-            <form onSubmit={e => {e.preventDefault(); addTask();}}>
-                <input type="text" value={des} onChange={e => setDescription(e.target.value)}></input>
-                <input type="submit"></input>
-            </form>
-            <ul>
-                {tasks.map(task => {
-                    return(
-                        <Task key={task.id} id={task.id} description={task.description} toggleStatus={toggleStatus} removeTask={removeTask} /> 
-                    )        
-                })}
-            </ul>
+            <div className="box">
+                <h1>Task Input Form</h1>
+                <form onSubmit={e => {e.preventDefault(); addTask();}}>
+                    <label for="des">Description </label>
+                    <input id="description" type="text" name="des" value={des} onChange={e => setDescription(e.target.value)}></input>
+                    <input id="submit" type="submit"></input>
+                </form>
+                <br />
+                <hr />
+                <h1>To Do List</h1>
+                <ul>
+                    {tasks.map(task => {
+                        return(
+                            <Task key={task.id} id={task.id} description={task.description} toggleStatus={toggleStatus} removeTask={removeTask} /> 
+                        )        
+                    })}
+                </ul>
+            </div>
         </div>
     )
 }
