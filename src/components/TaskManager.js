@@ -44,7 +44,7 @@ function TaskManager() {
             <div className="box">
                 <h1>Task Input Form</h1>
                 <form onSubmit={e => {e.preventDefault(); addTask();}}>
-                    <label for="des">Description </label>
+                    <label for="des">Enter Task </label>
                     <input id="description" type="text" name="des" value={des} onChange={e => setDescription(e.target.value)}></input>
                     <input id="submit" type="submit"></input>
                 </form>
